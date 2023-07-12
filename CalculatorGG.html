@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalculatorGG</title>
+</head>
+<style>
+  table, th, td {
+    border: 1px solid blue;
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  table {
+    border-spacing: 5px;
+    width: 870px;
+    height: 625px;
+    font-family: Tahoma,serif;
+    font-size: 30px;
+    padding: 5px;
+  }
+  input {
+    font-size: 50px;
+    border-radius: 30px;
+    height: 100px;
+    width: 870px;
+  }
+</style>
+<body>
+<table>
+  <tr>
+    <th colspan="7"><input style="text-align: right" id="input"></th>
+  </tr>
+  <tr style="background-color: darkgrey">
+    <td id="rad">Rad</td>
+    <td id="deg">Deg</td>
+    <td onclick=f('!')>x!</td>
+    <td onclick=f('(')>(</td>
+    <td onclick=f(')')>)</td>
+    <td onclick=f('%')>%</td>
+    <td onclick=del()>AC</td>
+  </tr>
+  <tr>
+    <td id="a" style="background-color: darkgrey">Inv</td>
+    <td style="background-color: darkgrey">Sin</td>
+    <td style="background-color: darkgrey">In</td>
+    <td style="background-color: aqua" onclick=f('7')>7</td>
+    <td style="background-color: aqua" onclick=f('8')>8</td>
+    <td style="background-color: aqua" onclick=f('9')>9</td>
+    <td style="background-color: darkgrey" onclick=f('/')>&#247</td>
+  </tr>
+  <tr>
+    <td style="background-color: darkgrey" onclick=f('&#928')>&#928</td>
+    <td style="background-color: darkgrey" onclick=f('Cos')>Cos</td>
+    <td style="background-color: darkgrey">Log</td>
+    <td style="background-color: aqua" onclick=f('4')>4</td>
+    <td style="background-color: aqua" onclick=f('5')>5</td>
+    <td style="background-color: aqua" onclick=f('6')>6</td>
+    <td style="background-color: darkgrey" onclick=f('*')>&#215</td>
+  </tr>
+  <tr>
+    <td style="background-color: darkgrey">e</td>
+    <td style="background-color: darkgrey">tan</td>
+    <td style="background-color: darkgrey">&#8730</td>
+    <td style="background-color: aqua" onclick=f('1')>1</td>
+    <td style="background-color: aqua" onclick=f('2')>2</td>
+    <td style="background-color: aqua" onclick=f('3')>3</td>
+    <td style="background-color: darkgrey" onclick=f('-')>&#8722</td>
+  </tr>
+  <tr>
+    <td style="background-color: darkgrey">Ans</td>
+    <td style="background-color: darkgrey">EXP</td>
+    <td style="background-color: darkgrey">x<sup>y</sup></td>
+    <td style="background-color: aqua" onclick=f('0')>0</td>
+    <td style="background-color: aqua" onclick=f('.')>.</td>
+    <td style="background-color: blue" onclick="cal()">&#61</td>
+    <td style="background-color: darkgrey" onclick=f('+')>&#43</td>
+  </tr>
+</table>
+<script src="M1_B7_CalculatorGG.js"></script>
+</body>
+</html>
